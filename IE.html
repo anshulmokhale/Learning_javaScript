@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Insert Adjecent Element</title>
+</head>
+
+<body>
+    <div id="div">
+        <ul id="ul">
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+        </ul>
+    </div>
+
+    <!-- ---------------------------javascript------------------------------------- -->
+    <script>
+        let elm = document.getElementById("ul");
+        let val = document.createElement('li');
+        val.textContent = "hello world";
+        elm.insertAdjacentElement('afterbegin', val);
+    </script>
+</body>
+
+</html>

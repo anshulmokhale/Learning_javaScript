@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert Before Javascript</title>
+</head>
+
+<body>
+    <div id="intro">
+        <ul id="dd">
+            <li>hlo</li>
+            <li>hlo2</li>
+            <li>hlo3</li>
+            <li>hlo4</li>
+        </ul>
+    </div>
+
+    <!-- --------------------------------------javascript--------------------------------- -->
+    <script>
+        let elm = document.getElementById("dd")
+        let val = document.createElement('h1');
+        val.textContent = "hlo4";
+        let pos = elm.firstElementChild.nextElementSibling.nextElementSibling;
+        elm.insertBefore(val, pos);
+    </script>
+</body>
+
+</html>
