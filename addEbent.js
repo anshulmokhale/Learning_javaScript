@@ -8,3 +8,10 @@ function change() {
 }
 
 btn.addEventListener('click', change);
+
+btn.addEventListener('mouseover', function () {
+    btn.style.color = "blue";
+})
+btn.addEventListener('mouseout', function () {
+    btn.style.color = "black";
+})
