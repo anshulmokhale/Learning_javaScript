@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Insert Adjecent Element</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ul {
+            background-color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,17 +20,16 @@
             <li>second</li>
             <li>third</li>
         </ul>
-        <!-- <button id="btn">click here</button> -->
     </div>
 
     <!-- ---------------------------javascript------------------------------------- -->
+    <!-- <script src="./getCcss.js"></script> -->
     <script>
-        let elm = document.getElementById("ul");
-        let val = document.createElement('li');
-        val.textContent = "hello world";
-        elm.insertAdjacentElement('afterbegin', val);
-        elm.style.background = "red";
+        let val = document.getElementById("ul");
+        let css = getComputedStyle(val);
+        console.log(css);
     </script>
+
 </body>
 
 </html>
