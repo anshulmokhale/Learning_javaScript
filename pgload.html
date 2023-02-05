@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Loader</title>
+</head>
+
+<body>
+    <div id="dd">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/80486dx2-large.jpg/800px-80486dx2-large.jpg"
+            alt="img" srcset="">
+    </div>
+
+    <!-- -----------------------------javascript----------------------------- -->
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            console.log("content loaded");
+        })
+        window.addEventListener("load", function () {
+            console.log("fully loaded");
+        })
+    </script>
+</body>
+
+</html>

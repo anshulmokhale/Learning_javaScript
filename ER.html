@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Remover</title>
+    <style>
+        #head {
+            width: 50%;
+            margin: auto;
+            /* display: inline-block; */
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #btn {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="el">
+        <h1 id="head">This is a simple message</h1>
+        <button id="btn">press me</button>
+
+    </div>
+
+    <!-- ---------------------------------javascript--------------------------------------- -->
+    <script>
+        let head = document.getElementById("head");
+
+        let btn = document.getElementById("btn");
+
+        function click1() {
+            head.innerHTML = "heelo";
+        }
+        function click2() {
+            head.innerHTML = "world";
+        }
+
+        btn.addEventListener('click', click1);
+        btn.addEventListener('click', click2);
+
+        btn.removeEventListener('click', click2);
+    </script>
+</body>
+
+</html>
